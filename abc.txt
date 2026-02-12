@@ -1,0 +1,193 @@
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\teacher\Desktop\my-second-project>git init
+Initialized empty Git repository in C:/Users/teacher/Desktop/my-second-project/.git/
+
+C:\Users\teacher\Desktop\my-second-project>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\teacher\Desktop\my-second-project>git add .
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "Second commit"
+[master (root-commit) dc9b35d] Second commit
+ 2 files changed, 16 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+C:\Users\teacher\Desktop\my-second-project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\teacher\Desktop\my-second-project>git remote add origin https://github.com/sidahad/my-second-project.git
+
+C:\Users\teacher\Desktop\my-second-project>git branch -M main
+
+C:\Users\teacher\Desktop\my-second-project>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 480 bytes | 480.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Everything up-to-date
+
+C:\Users\teacher\Desktop\my-second-project>git add .
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "added a paragraph"
+[main 4ab7091] added a paragraph
+ 1 file changed, 1 insertion(+)
+
+C:\Users\teacher\Desktop\my-second-project>git log
+commit 4ab7091480031d528a7ffe35ed5e8fde1f509507 (HEAD -> main)
+Author: sidahad <ahadkind32415@gmail.com>
+Date:   Tue Feb 10 19:38:42 2026 +0500
+
+    added a paragraph
+
+commit dc9b35d67fc8c5592cdf877eaabbd36dc69300dc (origin/main)
+Author: sidahad <ahadkind32415@gmail.com>
+Date:   Tue Feb 10 19:23:25 2026 +0500
+
+    Second commit
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 613 bytes | 613.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+   dc9b35d..4ab7091  main -> main
+
+C:\Users\teacher\Desktop\my-second-project>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\teacher\Desktop\my-second-project>git add abc.html
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "Created a new file abc.html"
+[main 4b07665] Created a new file abc.html
+ 1 file changed, 19 insertions(+)
+ create mode 100644 abc.html
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 513 bytes | 513.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+   4ab7091..4b07665  main -> main
+
+C:\Users\teacher\Desktop\my-second-project>git log
+commit 4b0766538d3aded2413e711c0cdc4bd472c2a569 (HEAD -> main, origin/main)
+Author: sidahad <ahadkind32415@gmail.com>
+Date:   Tue Feb 10 19:47:14 2026 +0500
+
+    Created a new file abc.html
+
+commit 4ab7091480031d528a7ffe35ed5e8fde1f509507
+Author: sidahad <ahadkind32415@gmail.com>
+Date:   Tue Feb 10 19:38:42 2026 +0500
+
+    added a paragraph
+
+commit dc9b35d67fc8c5592cdf877eaabbd36dc69300dc
+Author: sidahad <ahadkind32415@gmail.com>
+Date:   Tue Feb 10 19:23:25 2026 +0500
+
+    Second commit
+
+C:\Users\teacher\Desktop\my-second-project>git add.gitignore
+git: 'add.gitignore' is not a git command. See 'git --help'.
+
+C:\Users\teacher\Desktop\my-second-project>git add .gitignore
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "remove a abc.html file using gitignore"
+[main 779ba59] remove a abc.html file using gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+   4b07665..779ba59  main -> main
+
+C:\Users\teacher\Desktop\my-second-project>git add .gitignore
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "remove a abc.html file"
+[main b70b12e] remove a abc.html file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+   779ba59..b70b12e  main -> main
+
+C:\Users\teacher\Desktop\my-second-project>git add .gitignore
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "remove a file"
+[main 744a95d] remove a file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+   b70b12e..744a95d  main -> main
+
+C:\Users\teacher\Desktop\my-second-project>git add .gitignore
+
+C:\Users\teacher\Desktop\my-second-project>git commit -m "remove file"
+[main 9a2e23c] remove file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\teacher\Desktop\my-second-project>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sidahad/my-second-project.git
+   744a95d..9a2e23c  main -> main
+
+C:\Users\teacher\Desktop\my-second-project>
